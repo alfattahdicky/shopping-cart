@@ -17,6 +17,7 @@ const OrderCart = ({
   incrementProduct,
   decrementProduct,
   removeOrder,
+  orderProduct
 }) => {
   return (
     <Card w="100%">
@@ -34,15 +35,15 @@ const OrderCart = ({
                 _hover={{ backgroundColor: "transparent" }}
                 bgColor="transparent"
                 fontSize="1.2rem"
-                onClick={decrementProduct}
+                onClick={incrementProduct}
               />
-              <Text>1</Text>
+              <Text>{orderProduct}</Text>
               <IconButton
                 icon={<AiOutlinePlus />}
                 _hover={{ backgroundColor: "transparent" }}
                 bgColor="transparent"
                 fontSize="1.2rem"
-                onClick={incrementProduct}
+                onClick={decrementProduct}
               />
               <IconButton
                 icon={<AiFillRest />}

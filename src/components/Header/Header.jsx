@@ -1,5 +1,4 @@
-import { Flex, Heading, Button, Box, useDisclosure } from "@chakra-ui/react";
-import { useEffect, useRef } from "react";
+import { Flex, Heading, Box } from "@chakra-ui/react";
 import useProductStore from "../../store/cartStore";
 import ButtonCart from "./ButtonCart";
 import PopoverCart from "./PopoverCart";
